@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "museo", sans-serif;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "museo";
+  src: local(""), url("../public/fonts/museo-sans-cyrl-regular.woff2") format("woff2"),
+  url("../public/fonts/museo-sans-cyrl-regular.woff") format("woff");
+}
+
+@import './components/layouts/Layout/Layout';
+@import './components/HeaderComponents/HeaderComponent';
+@import './components/structure/Home/Home';

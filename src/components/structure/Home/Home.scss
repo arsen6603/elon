@@ -1,0 +1,194 @@
+.Home {
+  width: 100vw;
+  //height: 100vh;
+  background: url("../../../../public/images/background.jpg") no-repeat center;
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
+  background-size: cover;
+}
+
+.Home__Content {
+  padding: 117px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home__Content_Title {
+  position: relative;
+  color: #fff;
+
+  h1 {
+    background: linear-gradient(125deg, #ffffff 25%, #fd5f2b 75%, rgb(255, 75, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 58px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .Home__Content_Button {
+    margin-top: 92px;
+    background: none;
+    color: #fff;
+    width: 181px;
+    height: 35px;
+    border: 2px solid #144073;
+    position: relative;
+
+    background-image: radial-gradient(circle at 100% 100%, transparent 0px, #08223f 0px, #08223f 1px, transparent 1px), linear-gradient(to right, #08223f, #23599c), radial-gradient(circle at 0% 100%, transparent 0px, #23599c 0px, #23599c 1px, transparent 1px), linear-gradient(to bottom, #23599c, #0a223d), radial-gradient(circle at 0% 0%, transparent 0px, #0a223d 0px, #0a223d 1px, transparent 1px), linear-gradient(to left, #0a223d, #23599c), radial-gradient(circle at 100% 0%, transparent 0px, #23599c 0px, #23599c 1px, transparent 1px), linear-gradient(to top, #23599c, #08223f);
+    background-size: 1px 1px, calc(100% - 2px) 1px, 1px 1px, 1px calc(100% - 2px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+
+    &:after {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      content: '';
+      border-color: #ffffff;
+      border-style: solid;
+    }
+    &:before,:after {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      content: '';
+      border-color: #ffffff;
+      border-style: solid;
+    }
+
+    &:before {
+      display: none;
+    }
+
+
+    &:after {
+      right: -1px;
+      top: -1px;
+      border-width: 2px 2px 0 0;
+      box-shadow: #FFFFFF 3px -3px 10px 1px;
+    }
+  }
+}
+
+.Home__Button_Border {
+  &:after {
+    left: -1px;
+    bottom: -1px;
+    border-width: 0 0 2px 2px;
+    box-shadow: #FFFFFF -3px 3px 10px 1px;
+  }
+
+
+}
+
+.Mars__Image {
+  width: 410px;
+  position: absolute;
+  top: -70px;
+  left: 384px;
+}
+
+.Home__Content_Analytics {
+  width: 390px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  color: #FFF;
+  gap: 11px;
+
+  .Analytics__Item_Text {
+    text-align: center;
+  }
+
+  .Content__Analytics_Item {
+    width: 175px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    b {
+      font-size: 70px;
+      margin-top: 20px;
+
+      span {
+        font-size: 15px;
+      }
+    }
+
+    &:first-child {
+      align-items: center;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(310deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+
+    &:nth-child(2) {
+      align-items: flex-end;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(47deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+
+    &:nth-child(3) {
+      align-items: center;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(218deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+
+    &:last-child {
+      align-items: flex-end;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(128deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+  }
+}
+
+@media (max-width: 1204px) {
+  .Home__Content {
+    padding: 117px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mars__Image {
+    display: none;
+  }
+
+  .Home__Content_Title {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .Home__Content_Analytics {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .Content__Analytics_Item {
+    background: rgba(124, 116, 116, 0.21) !important;
+    align-items: center !important;
+    border: 1px solid rgba(250, 250, 250, 0.64);
+    padding: 10px;
+    flex: 1;
+  }
+
+  .Home__Content_Button {
+    width: 300px !important;
+    height: 60px !important;
+    font-size: 20px;
+  }
+
+}
+
+@media (min-width: 2028px) {
+  .Mars__Image {
+    display: none;
+  }
+}
